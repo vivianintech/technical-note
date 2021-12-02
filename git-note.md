@@ -19,7 +19,7 @@
   Your parent commit is the first commit which created your original branch
   You can use `git log --graph --oneline --all`
 
-- Step 3: Run `git rebase --no-f <base commit id>` to rebase your new branch to replay your old commits
+- Step 3: Run `git rebase --no-ff <base commit id>` to rebase your new branch to replay your old commits
 
 - Step 4: Push your commit
   Note that you don't need to run `git add` or `git commit` in this case
