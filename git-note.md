@@ -54,3 +54,44 @@ There are 2 ways you can achieve this. From the current local branch:
   You can use `git log --graph --oneline --all`
 
 - Step 2: Run `git reset --hard <past commit id>`
+
+---
+
+### Resolve Git conflict
+
+#### Solution 1
+
+##### Step-by-step
+
+- From your current local branch, run `git pull origin master`
+- Check the conflicted files by `git status`
+- Click on each conflicted file to resolve the conflicts
+- After all conflicts are resolved, do `git add .` following by a `git commit -m <commit message>` and lastly `git push origin <current branch>`
+
+##### Pros
+
+- This solution is straightforward and easy-doing
+
+##### Cons
+
+- This solution will create many commits in the branch. Thus, when it comes to other complicated issues, it's tricky to track down where/when the issue comes from
+
+#### Solution 2
+
+##### Step-by-step
+
+- `git fetch origin master`
+- `git rebase origin/master`
+- `git status` : to check what need to be resolved
+- `git add -u`
+- Once everything is resolved `git rebase --continue`. If the command does not exit, type `:wq`
+- `git log` to check the log of push from remote
+- `git push origin <your branch> -f`
+
+##### Pros
+
+- This solution does not create a new commit, so you can control the number of commits on your branch as you wish
+
+##### Cons
+
+- However, it does contain risks when you force push the commit
