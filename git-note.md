@@ -45,3 +45,12 @@ There are 2 ways you can achieve this. From the current local branch:
 
 - Solution 1: `git checkout -b <new branch>`
 - Solution 2: `git switch -c <new-branch>`
+
+---
+
+### Reset your branch to a past commit
+
+- Step 1: Locate and copy the id of you past commit
+  You can use `git log --graph --oneline --all`
+
+- Step 2: Run `git reset --hard <past commit id>`
