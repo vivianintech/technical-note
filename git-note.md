@@ -36,6 +36,7 @@ Situation
 Solution
 
 - Run this command `git checkout origin/master path-to-file`
+- Then commit and push
 
 ---
 
