@@ -1,10 +1,12 @@
 # Technical-note Introduction
 
-This is my technical note for problem solving some issues that I have come across throughout my day-to-day jobs.
+This is my technical note for solving some issues I have come across in my day-to-day jobs.
 
-I think this should be open to everyone because I love to share my experience and hopefully this can be helpful to you.
+Hopefully, this will be helpful for someone having the same problems
 
-This contains:
+The notes include:
 
-- git-note: solutions for some frequently asked git questions
-- helpful-links: collection of materials that I found helpful
+- Git: solutions for some common git issues
+- DevOps: concepts, commands about DevOps
+- Learning Materials: some learning materials I have been using
+- Situation-Problem-Solving: experience in handling issues while working in a team and with others
